@@ -4,8 +4,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="convert2tif",
-    version="0.0.1",
+    name="convert2tif-dakotagporter",
+    version="0.0.4",
     author="Dakota Porter",
     author_email="dakotap3045@gmail.com",
     description="Small package that converts image(s) to .tif file format.",
@@ -17,7 +17,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    package_dir={"": ""},
-    packages=setuptools.find_packages(where=""),
+    package_dir={"": "convert2tif"},
+    packages=setuptools.find_packages(where="convert2tif"),
     python_requires=">=3.6",
 )
