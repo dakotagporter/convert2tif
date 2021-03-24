@@ -3,9 +3,13 @@ import setuptools
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
+REQUIRED = [
+    'Pillow'
+]
+
 setuptools.setup(
-    name="convert2tif-dakotagporter",
-    version="0.0.4",
+    name="convert2tif",
+    version="0.1.0",
     author="Dakota Porter",
     author_email="dakotap3045@gmail.com",
     description="Small package that converts image(s) to .tif file format.",
@@ -17,7 +21,8 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    package_dir={"": "convert2tif"},
-    packages=setuptools.find_packages(where="convert2tif"),
+    install_requires=REQUIRED,
+    package_dir={"": "src"},
+    packages=setuptools.find_packages(where="src"),
     python_requires=">=3.6",
 )
