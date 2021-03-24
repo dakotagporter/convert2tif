@@ -13,8 +13,9 @@ Copy the link above to install.
 To import the `convert` function:
 `from convert2tif.convert2tif import convert`
 
+---
 convert2tif.convert(input_path=".", output_path=None)
-
+---
 Args:
 -----
 
