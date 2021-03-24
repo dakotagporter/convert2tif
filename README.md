@@ -15,10 +15,8 @@ To import the `convert` function:
 
 ---
 convert2tif.convert(input_path=".", output_path=None)
----
 
 Args:
------
 
     input_path: str
         String indicating path to directory of images to be converted. Uses
